@@ -1,0 +1,19 @@
+{
+  "homepage": "http://SidharathBansal.github.io/Dogipidea",
+  "name": "dogipidea",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write \" src/**/*.{js,jsx} \" ",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "gh-pages": "^3.2.3",
+    "prettier": "^2.4.1"
+  }
+}
