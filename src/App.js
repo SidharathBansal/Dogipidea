@@ -1,10 +1,6 @@
-const Dog = (props) => {
-  return React.createElement("div", {}, [
-    React.createElement("h3", {}, props.name),
-    React.createElement("h3", {}, props.weight),
-    React.createElement("h3", {}, props.breed),
-  ]);
-};
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Dog from './Dog';
 
 const App = () => {
   var arr = [
