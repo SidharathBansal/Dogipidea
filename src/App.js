@@ -16,8 +16,6 @@ const App = () => {
     "div", // tag
     { id: "website-title" }, // attributes with the element
     [
-
-        
       React.createElement("h1", {}, "Dog Website"),
       arr.map((item) => React.createElement(Dog, item)),
     ] // content can be another component also.
