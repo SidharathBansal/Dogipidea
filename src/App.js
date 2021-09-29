@@ -11,7 +11,7 @@ const App = () => {
   return (
     <div id="wesite-title">
       {arr.map((item) => (
-        <Dog {...item}/>
+        <Dog {...item} />
       ))}
     </div>
   );
