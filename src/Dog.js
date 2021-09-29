@@ -1,11 +1,14 @@
-import React from 'react';
+import React from "react";
 
 const Dog = (props) => {
-    return React.createElement("div", {}, [
-      React.createElement("h3", {}, props.name),
-      React.createElement("h3", {}, props.weight),
-      React.createElement("h3", {}, props.breed),
-    ]);
+  const { name, weight, breed } = props;
+  return (
+    <div>
+      <h3>{name}</h3>
+      <h3>{weight}</h3>
+      <h3>{breed}</h3>
+    </div>
+  );
 };
 
 export default Dog;
