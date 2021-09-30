@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Dog from "./Dog";
+import SearchParams from "./SearchParams";
 
 const App = () => {
   var arr = [
@@ -9,11 +10,14 @@ const App = () => {
     { name: "Lion", weight: "5.70 Kg", breed: "husky" },
   ];
   return (
-    <div id="wesite-title">
-      {arr.map((item) => (
-        <Dog {...item} />
-      ))}
-    </div>
+    <>
+      <SearchParams/>
+      <div id="wesite-title" >
+        {arr.map((item) => (
+          <Dog key={item.id} {...item} />
+        ))}
+      </div>
+    </>
   );
 };
 
